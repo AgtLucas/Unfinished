@@ -2,7 +2,7 @@
 platform :ios, '8.0'
 
 target 'BusApp' do
-    pods 'Alamofire'
+    pod 'Alamofire'
 end
 
 target 'BusAppTests' do
