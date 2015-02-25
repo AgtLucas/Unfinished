@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,20 +22,33 @@
                                 <state key="normal" image="select">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="46" y="343" width="508" height="113"/>
+                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.27843137254901962" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="l1s-fC-gV4" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="AM6-w4-aA5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1s-fC-gV4" secondAttribute="trailing" constant="30" id="QDa-Fx-o6x"/>
                             <constraint firstAttribute="centerX" secondItem="l1s-fC-gV4" secondAttribute="centerX" id="UXC-YZ-hjc"/>
+                            <constraint firstItem="l1s-fC-gV4" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="aC5-Cy-Igf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1s-fC-gV4" secondAttribute="trailing" constant="30" id="hKw-GH-Wyq"/>
                             <constraint firstAttribute="centerY" secondItem="l1s-fC-gV4" secondAttribute="centerY" constant="0.5" id="lQx-Qy-Hjz"/>
+                            <constraint firstItem="l1s-fC-gV4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="30" id="lXQ-e1-rUL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="l1s-fC-gV4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="AM6-w4-aA5"/>
+                                <exclude reference="QDa-Fx-o6x"/>
                                 <exclude reference="UXC-YZ-hjc"/>
+                                <exclude reference="aC5-Cy-Igf"/>
+                                <exclude reference="hKw-GH-Wyq"/>
                                 <exclude reference="lQx-Qy-Hjz"/>
+                                <exclude reference="lXQ-e1-rUL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -42,8 +56,13 @@
                                 <include reference="l1s-fC-gV4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="AM6-w4-aA5"/>
+                                <include reference="QDa-Fx-o6x"/>
                                 <include reference="UXC-YZ-hjc"/>
+                                <include reference="aC5-Cy-Igf"/>
+                                <include reference="hKw-GH-Wyq"/>
                                 <include reference="lQx-Qy-Hjz"/>
+                                <include reference="lXQ-e1-rUL"/>
                             </mask>
                         </variation>
                     </view>
